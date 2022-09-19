@@ -1,5 +1,11 @@
+/* eslint-disable no-undef */
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { Home } from '.';
+
 describe('<home />', () => {
-  it('is a dummy test', () => {
-    expect(1).toBe(1);
+  it('should render search, posts and load more', () => {
+    render(<Home />);
+    screen.debug();
   });
 });
